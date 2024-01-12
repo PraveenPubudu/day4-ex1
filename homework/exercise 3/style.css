@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --main-font-family: "Roboto", sans-seri;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font-family);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* nav1 */
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: rgb(255, 255, 255);
+}
+.left {
+  display: flex;
+  list-style: none;
+}
+.left li a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: black;
+}
+.left li a:hover {
+  color: aqua;
+}
+.right i {
+  height: 20px;
+  margin-left: 10px;
+  color: black;
+}
+.right i:hover {
+  color: aqua;
+}
+
+/* logoBanner */
+.logoBanner {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(230, 234, 236);
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  color: rgb(218, 60, 86);
+}
+.moto {
+  font-size: 20px;
+  color: rgb(99, 101, 102);
+}
+
+/* nav2 */
+.mainNav {
+  margin: 10px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+.mainNav .home {
+  color: rgb(218, 60, 86);
+}
+.mainNav i {
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+}
+.mainNav li a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: rgb(62, 63, 63);
+}
+.subNav {
+  display: none;
+  list-style: none;
+  width: 180px;
+  padding-top: 10px;
+  margin-left: 30px;
+}
+.subNav li {
+  margin-bottom: 5px;
+  text-align: left;
+}
+.mainNav li a:hover {
+  color: aqua;
+}
+.mainNav li:hover .subNav {
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding-left: 5px;
+}
+.mainNav li:hover .subNav li a:hover {
+  color: aqua;
+}
+
+/* grid */
+.grid {
+  background-color: rgb(230, 234, 236);
+  display: grid;
+  grid-template-columns: auto auto ;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(images/wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 700px;
+
+}
+.item2 {
+  padding: 30px 20px 20px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.widget p {
+  width: 140px 
+}
+.widget hr {
+  margin-left: 10px;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: black;
+}
+.accounts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.accounts p {
+  margin-top: 2rem;
+  text-align: center;
+  width: 90%;
+}
+.item2 img{
+  height: 150px;
+  width: fit-content;
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+.accoutLinks {
+  display: flex;
+  margin: 4rem 0 0 0;
+}
+.circle {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item3 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  max-height: 30px;
+  width: 100%;
+  padding: 5px 15px;
+  margin: 0 20px;
+  border: none;
+  background-color: rgb(230, 234, 236);
+}
